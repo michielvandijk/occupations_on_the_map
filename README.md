@@ -15,4 +15,4 @@ __fig_table_map_manuscript.r:__ Creates all the figures in the main manuscript.
 __fig_table_map_si.r:__ Creates all the figures in the Supplementary Information.
 
 
-
+Note that the results of `run_ml_workflow.r` are saved in a folder that will have the name of the date the script will be run. This date will manually have to be set in the scripts to post-process the data and create figures.
