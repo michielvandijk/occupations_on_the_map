@@ -1,6 +1,6 @@
 # occupations_on_the_map
 
-This repository contains the scripts to reproduce the analysis presented in [Van Dijk et al. (2022), Occupations on the map: Using a super learner algorithm to downscale labor statistics, preprint](DOI: https://doi.org/10.21203/rs.3.rs-1300541/v1).
+This repository contains the scripts to reproduce the analysis presented in [Van Dijk et al. (2022), Occupations on the map: Using a super learner algorithm to downscale labor statistics, preprint](https://doi.org/10.21203/rs.3.rs-1300541/v1).
 
 __set_path.r:__ Contains the path where the input is saved. At the moment this is `c:/temp/occupations_on_the_map` but can be replaced by any folder name. This script is sourced by all the other scripts so input data can be found and further processed.
 
