@@ -76,7 +76,7 @@ rf_spec <-
   set_mode("regression") %>%
   set_engine("ranger", regularization.factor = tune("regularization"))
 
-# The mtry parameter does not has an upper bound as this depends on the number of predictors
+# The mtry parameter does not have an upper bound as this depends on the number of predictors
 # We set it manually to the number of columns in the database - 3, two adm variables and value
 parameters(rf_spec) %>%
   pull_dials_object("mtry")
@@ -159,8 +159,8 @@ run_ml <- function(occ_s, n_grid, k_fold, n_rep, prop_value){
     update_role(adm_name, new_role = "adm_name") %>%
     update_role(variable, new_role = "variable") %>%
     step_YeoJohnson(all_numeric_predictors()) %>%
-    step_normalize(all_numeric_predictors()) %>%
-    step_corr(all_predictors())
+    step_normalize(all_numeric_predictors())  %>%
+    step_corr(all_predictors(), threshold = .7) # Set correlation to 0.7
 
   all_workflows <-
     workflow_set(
