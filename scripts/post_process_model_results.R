@@ -32,7 +32,7 @@ options(digits = 4)
 # SET DATE -------------------------------------------------------------------------------
 # ========================================================================================
 
-# Ensemble model statistics for all occupation
+# Change to the date of your results folder
 results_date <- "2022-02-12"
 
 
